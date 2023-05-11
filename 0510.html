@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <title>JavaScript練習</title>
+</head>
+<body>
+    <h1>ホームページC2回目</h1>
+
+    <input type="button" value="実行" onclick="hello()">
+
+    <h2>文字サイズ変更ボタン</h2>
+    <input type="button" value="小" onclick="moji1('10px')">
+    <input type="button" value="中" onclick="moji1('20px')">
+    <input type="button" value="大" onclick="moji1('30px')">
+
+    <h2>以下JavaScpiptの記述内容</h2>
+
+    <script>
+    //Exercise1 文字サイズ変更
+    function moji1(size){
+        document.getElementsByTagName("body")[0].style.fontSize= size;
+    }
+
+    // function moji2(){
+    //     document.getElementsByTagName("body")[0].style.fontSize="20px";
+    // }
+    // function moji3(){
+    //     document.getElementsByTagName("body")[0].style.fontSize="30px";
+    // }
+
+
+
+
+        document.write("<br>");
+        var a = "こんにちは！";
+        document.write(a);
+        // if文 条件分岐
+        var b = 0;
+        if( b > 5){
+            document.write("bの値は5より大きいです！");
+        }
+        else if (b == 0){
+            document.write("bの値は0です");
+        }
+        else{
+            document.write("bの値は5より小さいです！");
+        }
+        //ループ処理
+        //for文（繰り返し回数が決まっている時）
+        //for(初期化式; 条件式; 更新式;)
+        for(var c = 0; c < 10; c++){
+            document.write(c);
+        }
+
+        //while文　（回数が決まっていない時）
+        //while(条件式){繰り返す処理}
+        var i = 3;
+        while(i < 10){
+            document.write("<br>"); //改行
+            document.write(i);
+            i++;
+        }
+
+        //Mathオブジェクト
+        document.write("<br>");
+        var x = Math.random();
+        document.write(x);
+
+        // ユーザー定義関数とイベント処理
+        function hello(){
+            document.bgColor="orange";
+        }
+        
+    
+        //章末問題
+        var kon = "こんにちは";
+        document.write(kon);
+        console.log(kon);
+
+        var hensu;
+        hensu = "変数の練習です";
+        document.write(hensu);
+        console.log(hensu);
+
+        var aisatsu = ["おはよう","こんにちは","こんばんは"]
+        document.write(aisatsu[0]);
+        document.write(aisatsu[1]);
+
+        
+        for(var e = 0; e < 6; ++e) {
+            document.write(e);
+        }
+
+        
+
+
+    </script>
+</body>
+</html>

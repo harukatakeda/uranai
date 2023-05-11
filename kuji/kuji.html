@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <title>おみくじアプリ</title>
+
+    <style>
+        h1{
+            text-align: center;
+        }
+        p{
+            font-weight: bold;
+            font-size: 25px;
+            color: #fff;
+            background-color: aqua;width: 150px;height: 150px;
+            margin-left: auto;
+            margin-right: auto;
+            border: 2px solid rgb(138, 135, 240);
+            text-align: center;
+            
+        }
+    </style>
+</head>
+<body>
+    <h1>占いアプリ</h1>
+    <p onclick="kuji()">★占う★</p>
+
+    
+
+    <script>
+        function kuji(){
+            var kekka = "";
+            var num = Math.floor(Math.random() * 4);
+            if(num == 0){
+                kekka = "大吉";
+            }
+            else if (num == 1){
+                kekka = "中吉";
+            }
+            else if (num == 2){
+                kekka = "小吉";
+            }
+            else if (num == 3){
+                kekka = "凶";
+            }
+
+            document.getElementsByTagName("p")[0].firstChild.data=kekka;
+        }
+
+
+    </script>
+</body>
+</html>
