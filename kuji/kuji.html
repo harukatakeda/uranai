@@ -32,7 +32,7 @@
             var kekka = "";
             var num = Math.floor(Math.random() * 4);
             if(num == 0){
-                kekka = "大吉";
+                jump();
             }
             else if (num == 1){
                 kekka = "中吉";
@@ -43,10 +43,12 @@
             else if (num == 3){
                 kekka = "凶";
             }
-
             document.getElementsByTagName("p")[0].firstChild.data=kekka;
         }
-
+        function jump() {
+            let url = location.href = "button.html";
+            open(url);
+        }
 
     </script>
 </body>
